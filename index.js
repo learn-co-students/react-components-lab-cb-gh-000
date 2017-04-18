@@ -5,15 +5,6 @@ const BUTCHER_PRODUCTS = [
   'Ribeye'
 ];
 
-ReactDOM.render(
-  React.createElement('div', {}, [
-    React.createElement(OlderCoaster),
-    React.createElement(InFrontOfYou),
-    React.createElement(ButcherShop)
-  ]),
-  document.getElementById('main')
-);
-
 const OlderCoaster=React.createClass({
   render(){
     return React.createElement('div',{className:'oldercoaster'},
@@ -29,21 +20,31 @@ const OlderCoaster=React.createClass({
   }
 });
 
-const InFrontOfYou= React.createClass({
+class InFrontOfYou extends React.Component{
   render(){
     return React.createElement('div',{},
 [
   React.createElement('p',{},"You shouldn't look too far."),
-  React.createElement('p',{},'Sometimes, the solution is <strong>right in front of you.')
-]
-)
+  React.createElement('p',{},['Sometimes, the solution is ',React.createElement('strong',{},'right in front of you.')])
+])
 }
-});
+}
 
-const ButcherShop=React.createClass({
+class ButcherShop extends React.Component{
   render(){
     return React.createElement('div',{className:'butcher-shop'},[
     React.createElement('p',{},'Hello! We have the following products for sale today:'),
-    React.createElement('ul',{},BUTCHER_PRODUCTS.map((butcher)=>{<li>{butcher}</li>}))
-  ]);
-});
+    React.createElement('ul',{},BUTCHER_PRODUCTS.map(butcher=>React.createElement('li',{},butcher)))
+  ])
+}
+}
+
+
+ReactDOM.render(
+  React.createElement('div', {}, [
+    React.createElement(OlderCoaster),
+    React.createElement(InFrontOfYou),
+    React.createElement(ButcherShop)
+  ]),
+  document.getElementById('main')
+);
