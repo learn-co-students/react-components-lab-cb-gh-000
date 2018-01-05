@@ -21,7 +21,7 @@ export class OlderCoaster extends React.Component {
         ])
       ]);
   }
-};
+}
 
 export class InFrontOfYou extends React.Component {
     render() {
@@ -29,18 +29,16 @@ export class InFrontOfYou extends React.Component {
         React.createElement('p', {}, "You shouldn't look too far").
         React.createElement('p', {}, "Sometimes, the solution is right in front of you")]);
     }
-};
+}
 
 export class ButcherShop extends React.Component {
     render() {
       return React.createElement('div', {className: "butcher-shop"}, [
         React.createElement('p', {}, "Hello! We have the following products for sale today:"),
-        React.createElement('ul', {}, [
-          BUTCHER_PRODUCTS.map((butcher_product) =>
-            <li>{butcher_product}</li>)])
-        ]);
+        React.createElement('ul',{}, BUTCHER_PRODUCTS.map((meat) => <li>{meat}</li>))
+    });
     }
-};
+}
 
 ReactDOM.render(
   React.createElement('div', {}, [
