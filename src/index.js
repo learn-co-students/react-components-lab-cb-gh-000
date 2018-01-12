@@ -1,4 +1,6 @@
 // Make sure to import React and ReactDOM
+import React from 'react';
+import ReactDOM from 'react-dom';
 
 const BUTCHER_PRODUCTS = [
   'Tenderloin',
@@ -16,7 +18,7 @@ export class OlderCoaster extends React.Component {
         React.createElement('ul',{},['Agnes','Muriel'].map((e)=>{
           return React.createElement('li',{},e);
         })
-    ]));
+    )]);
   }
 };
 export class InFrontOfYou extends React.Component {
