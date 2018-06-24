@@ -6,7 +6,7 @@ In this lab, you'll write React components and render them into the DOM.
 
 **Note: there is already a bit of code in `index.js`. Don't remove it: you'll need it to complete the exercise!**
 
-## First Things First
+## First dThings First
 Make sure to import `React` and `ReactDOM` into your `/src/index.js` file. For now, we will program all of our React components in this one file.
 
 As mentioned above, there is some starter code in this file to mount the components. In addition, there are three classes in this file that are extending the `React.Component` class. These will be our components! In this lab, will be writing all of our components using the ES6 `class` syntax: `class YourComponent extends React.Component {}`
