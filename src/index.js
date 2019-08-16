@@ -31,7 +31,7 @@ export class InFrontOfYou extends Component {
   //
   render() {
     return (
-      <div>
+      <div className="infrontofyou">
         <p>"You shouldn't  look too far."</p>
         <p>"Sometimes, the solution is right in front of you."</p>
       </div>
