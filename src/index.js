@@ -60,7 +60,7 @@ export class ButcherShop extends Component {
 export class App extends Component {
   render() {
     return (
-      <div>
+      <div id="app">
         <OlderCoaster />
         <InFrontOfYou />
         <ButcherShop />
