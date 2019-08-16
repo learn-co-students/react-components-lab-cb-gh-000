@@ -62,6 +62,7 @@ export class App extends Component {
     return (
       <ButcherShop />
       <InFrontOfYou />
+      <OlderCoaster />
     )
   }
 }
