@@ -60,9 +60,11 @@ export class ButcherShop extends Component {
 export class App extends Component {
   render() {
     return (
-      <OlderCoaster />
-      <InFrontOfYou />
-      <ButcherShop />
+      <div>
+        <OlderCoaster />
+        <InFrontOfYou />
+        <ButcherShop />
+      </div>
     )
   }
 }
