@@ -15,7 +15,7 @@ export class OlderCoaster extends Component {
    render() {
      return (
       <div className="oldercoaster">
-        <p>"Two grannies having the time of their life!"</p>
+        <p>Two grannies having the time of their life!</p>
         <p>Passengers:</p>
         <ul>
           <li>Agnes</li>
@@ -32,8 +32,8 @@ export class InFrontOfYou extends Component {
   render() {
     return (
       <div className="infrontofyou">
-        <p>"You shouldn't  look too far."</p>
-        <p>"Sometimes, the solution is right in front of you."</p>
+        <p>You shouldnt  look too far.</p>
+        <p>Sometimes, the solution is right in front of you.</p>
       </div>
     )
   }
