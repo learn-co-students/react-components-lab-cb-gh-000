@@ -28,7 +28,7 @@ export class OlderCoaster extends Component {
 }
 
 export class InFrontOfYou extends Component {
-  //
+
   render() {
     return (
       <div className="infrontofyou">
