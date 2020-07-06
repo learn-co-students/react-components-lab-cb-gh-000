@@ -10,7 +10,7 @@ In this lab, you'll write React components and render them into the DOM.
 
 Make sure to import `React` and `ReactDOM` into your `/src/index.js` file. The
 code is provided in this lesson, all you need to do is uncomment the lines.
-Using `import`, we can access the two necessary node modules for React apps.
+Using `import`, we can access the two necessary node modules for React apps. .
 
 ```JavaScript
 import React from 'react' // We need to import react so we can make use of its .component class
